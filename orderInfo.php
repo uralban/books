@@ -1,9 +1,7 @@
 <?php
-    $db = new PDO ('mysql:host=localhost;dbname=books','root','');
-		$data = $db->prepare('SELECT * FROM list WHERE id_list = :id');
-		$data->bindParam(':id', $_POST['id']);
-		$data->execute();
-		foreach ($data as $row){
-			echo $row['title'].'_'.$row['author'].'_'.$row['genre'].'_'.$row['cost'].'_'.$row['descr'].'_'.$_POST['id'];
-		}
+	include 'functions.php';
+	
+	$answer = readDb('book', 'find', $_POST['name']);
+	
+	echo $answer[0][2].'</td><td>'.$answer[0][1];
 ?>
