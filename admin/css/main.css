@@ -1,0 +1,44 @@
+input {
+	margin: 5px 0;
+}
+select {
+	margin: 5px 10px 5px 0;
+}
+.alert{
+	color: red;
+}
+.complete{
+	color: green;
+}
+table, td {
+	border: solid 1px black;
+}
+td {
+	padding: 5px;
+}
+thead {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#hideDiv {
+		display: none;
+		position: absolute;
+		background-color: grey;
+		top: 30%;
+		left: 30%;
+		padding: 20px 20px;
+}
+    #hideDiv>form>button{
+	    margin: 10px 10px 0 0;
+    }
+.controlButton {
+	margin-right: 30px;
+	margin-bottom: 20px;
+	height: 30px;
+	width: 100px;
+}
+.controlButtonUnactive {
+	pointer-events: none;
+    cursor: default;
+    color: #888;
+}

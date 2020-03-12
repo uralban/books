@@ -1,0 +1,20 @@
+table, td {
+		border: solid 1px black;
+	}
+	td {
+		padding: 5px;
+	}
+	.customerHideDiv {
+		display: none;
+		position: absolute;
+		background-color: #bbbbbb;
+		top: 30%;
+		left: 30%;
+		padding: 20px 20px;
+	}
+	.longInput{
+		width: 70%;
+	}
+	span.alertMsg{
+		color: red;
+	}
